@@ -1,0 +1,16 @@
+### Graphics
+fullscreen=false
+width=800
+height=500
+fovy=70
+fps=50
+viewing_distance=100
+vsync=false
+
+fire_viewing_distance=25
+
+### Texture Pack
+texture_pack=GoodMorningCraftv3.4
+
+### Keyboard
+keyboard=azerty

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2012 Martijn Courteaux <martijn.courteaux@skynet.be>
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<root>
+
+    <block id="1" name="dirt">
+        <brush>
+            <allsides>2,0</allsides>
+        </brush>
+        <resistance>3</resistance>
+        <blockClass>SAND</blockClass>
+    </block>
+    
+    <block id="2" name="grass">
+        <brush>
+            <top color="#B4B450">0,0</top>
+            <mantle>3,0</mantle>
+            <bottom>2,0</bottom>
+        </brush>
+        <resistance>3</resistance>
+        <blockClass>SAND</blockClass>
+        <mineResult>1</mineResult>
+    </block>
+
+    <block id="3" name="stone">
+        <brush>
+            <allsides>1,0</allsides>
+        </brush>
+        <resistance>10</resistance>
+        <blockClass>STONE</blockClass>
+        <mineResult>19</mineResult>
+    </block>
+    
+    <block id="4" name="wood0">
+        <brush>
+            <top>5,1</top>
+            <bottom>5,1</bottom>
+            <mantle>4,1</mantle>
+        </brush>
+        <resistance>6</resistance>
+        <blockClass>WOOD</blockClass>
+    </block>
+    
+    <block id="5" name="sand">
+        <brush>
+            <allsides>2,1</allsides>
+        </brush>
+        <fixed>false</fixed>
+        <resistance>3</resistance>
+        <blockClass>SAND</blockClass>
+    </block>
+    
+    <block id="6" name="planks">
+        <brush>
+            <allsides>4,0</allsides>
+        </brush>
+        <resistance>6</resistance>
+        <blockClass>WOOD</blockClass>
+    </block>
+    
+    <block id="7" name="leafs0">
+        <brush alphaBlending="true">
+            <allsides color="#809930">4,3</allsides>
+        </brush>
+        <resistance>1</resistance>
+        <mineResult>null</mineResult>
+        <translucent>true</translucent>
+    </block>
+    
+    <block id="8" name="leafs1">
+        <brush alphaBlending="true">
+            <allsides color="#A45415">4,3</allsides>
+        </brush>
+        <resistance>1</resistance>
+        <mineResult>null</mineResult>
+        <translucent>true</translucent>
+    </block>
+    
+    <block id="9" name="crafting_table">
+        <brush>
+            <top>11,2</top>
+            <mantle>12,3</mantle>
+            <bottom>9,1</bottom>
+        </brush>
+        <resistance>9</resistance>
+        <blockClass>WOOD</blockClass>
+        <customClass>org.craftmania.blocks.customblocks.CraftingTable</customClass>
+        <hasSpecialAction>true</hasSpecialAction>
+        <hasSpecialSaveData>true</hasSpecialSaveData>
+    </block>
+    
+    <block id="10" name="snow">
+        <brush>
+            <top>2,4</top>
+            <mantle>4,4</mantle>
+            <bottom>2,0</bottom>
+        </brush>
+        <resistance>4</resistance>
+        <blockClass>SAND</blockClass>
+    </block>
+    
+    <block id="11" name="cactus">
+        <brush alphaBlending="true">
+            <top>5,4</top>
+            <mantle inset="0.0625">6,4</mantle>
+            <bottom>5,4</bottom>
+        </brush>
+        <supportNeeded>true</supportNeeded>
+        <resistance>5</resistance>
+        <normalAABB>false</normalAABB>
+        <dimensions>0.4375,0.5,0.4375</dimensions>
+    </block>
+    
+    <block id="12" name="coal_ore">
+        <brush>
+            <allsides>2,2</allsides>
+        </brush>
+        <resistance>13</resistance>
+        <blockClass>STONE</blockClass>
+        <mineResult>coal</mineResult>
+        <mineResultCount>3</mineResultCount>
+    </block>
+    
+    <block id="13" name="iron_ore">
+        <brush>
+            <allsides>1,2</allsides>
+        </brush>
+        <resistance>15</resistance>
+        <blockClass>STONE</blockClass>
+    </block>
+    
+    <block id="14" name="gravel">
+        <brush>
+            <allsides>3,1</allsides>
+        </brush>
+        <fixed>false</fixed>
+        <resistance>4</resistance>
+        <blockClass>SAND</blockClass>
+    </block>
+    
+    <block id="15" name="torch">
+        <crossedbrush>0,5</crossedbrush>
+        <customClass>org.craftmania.blocks.customblocks.Torch</customClass>
+        <solid>false</solid>
+        <normalAABB>false</normalAABB>
+        <dimensions>0.2,0.3,0.2</dimensions>
+        <center>0.5,0.3,0.5</center>
+        <translucent>true</translucent>
+        <luminosity>15</luminosity>
+    </block>
+    
+    <block id="16" name="bedrock">
+    	<brush>
+    		<allsides>1,1</allsides>
+    	</brush>
+    	<resistance>100000</resistance>
+    </block>
+    
+    <block id="17" name="needles">
+    	<brush alphaBlending="true">
+    		<allsides>4,8</allsides>
+    	</brush>
+    	<resistance>2</resistance>
+    	<mineResult>null</mineResult>
+    </block>
+    <block id="18" name="wood1">
+    	<brush>
+    		<mantle>4,7</mantle>
+    		<top color="#DDDDDD">5,1</top>
+    		<bottom color="#DDDDDD">5,1</bottom>
+    	</brush>
+    	<resistance>6</resistance>
+    	<blockClass>WOOD</blockClass>
+    </block>
+    <block id="19" name="cobblestone">
+    	<brush>
+    		<allsides>0,1</allsides>
+    	</brush>
+    	<resistance>9</resistance>
+    	<blockClass>STONE</blockClass>
+    </block>
+    <block id="20" name="tallgrass">
+ 		<supportNeeded>true</supportNeeded>
+    	<customClass>org.craftmania.blocks.customblocks.TallGrass</customClass>
+    	<solid>false</solid>
+    	<translucent>true</translucent>
+    	<mineResult>null</mineResult>
+        <dimensions>0.4305,0.45,0.4305</dimensions>
+        <center>0.5,0.45,0.5</center>
+    </block>
+    <block id="21" name="redflower">
+    	<crossedbrush>12,0</crossedbrush>
+    	<supportNeeded>true</supportNeeded>
+    	<solid>false</solid>
+    	<translucent>true</translucent>
+        <dimensions>0.2305,0.45,0.2305</dimensions>
+        <center>0.5,0.45,0.4305</center>
+    </block>
+    <block id="22" name="yellowflower">
+    	<crossedbrush>13,0</crossedbrush>
+    	<supportNeeded>true</supportNeeded>
+    	<solid>false</solid>
+    	<translucent>true</translucent>
+        <dimensions>0.2305,0.35,0.2305</dimensions>
+        <center>0.5,0.35,0.4305</center>
+    </block>
+    <block id="23" name="glass">
+    	<brush alphaBlending="true">
+    		<allsides>1,3</allsides>
+    	</brush>
+    	<translucent>true</translucent>
+    	<resistance>5</resistance>
+    </block>
+    <block id="24" name="container">
+    	<brush>
+    		<top>9,1</top>
+    		<left>10,1</left>
+    		<right>10,1</right>
+    		<front>10,1</front>
+    		<back>11,1</back>
+    		<bottom>9,1</bottom>
+    	</brush>
+    	<blockClass>WOOD</blockClass>
+    	<customClass>org.craftmania.blocks.customblocks.Container</customClass>
+    	<resistance>9</resistance>
+    	<hasSpecialAction>true</hasSpecialAction>
+    	<hasSpecialSaveData>true</hasSpecialSaveData>
+    </block>
+    <block id="25" name="redstone">
+    	<hasRedstoneLogic>true</hasRedstoneLogic>
+    	<customClass>org.craftmania.blocks.customblocks.Redstone</customClass>
+    	<customInventoryImage texture="items">8,3</customInventoryImage>
+    	<translucent>true</translucent>
+    	<solid>false</solid>
+    	<normalAABB>false</normalAABB>
+    </block>
+    <block id="26" name="redstone_ore">
+    	<brush>
+    		<allsides>3,3</allsides>
+    	</brush>
+    	<blockClass>STONE</blockClass>
+    	<resistance>15</resistance>
+    	<mineResult>redstone</mineResult>
+    	<mineResultCount>15</mineResultCount>
+    </block>
+    <block id="27" name="redstone_torch">
+    	<crossedbrush>3,6</crossedbrush>
+    	<customClass>org.craftmania.blocks.customblocks.RedstoneTorch</customClass>
+        <solid>false</solid>
+        <normalAABB>false</normalAABB>
+        <dimensions>0.2,0.3,0.2</dimensions>
+        <center>0.5,0.3,0.5</center>
+        <translucent>true</translucent>
+        <hasRedstoneLogic>true</hasRedstoneLogic>
+        <luminosity>5</luminosity>
+    </block>
+    <block id="28" name="redstone_lamp">
+    	<brush>
+    		<allsides>3,13</allsides>
+    	</brush>
+    	<customClass>org.craftmania.blocks.customblocks.RedstoneLamp</customClass>
+    	<hasRedstoneLogic>true</hasRedstoneLogic>
+    </block>
+</root>
